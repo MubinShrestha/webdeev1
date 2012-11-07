@@ -1,0 +1,29 @@
+<!DOCTYPE html>   
+<html>
+	<head>
+		<title></title>
+		<script type = "text/javascript">
+			function valid(){
+				var emailVal = document.getElementById('email').valid;			
+				var usernameVal = document.getElementById('username').valid;
+				var passwordVal = document.getElementById('password').valid;
+				var cpasswordVal = document.getElementById('c_password').valid;
+				
+			if(emailVal === '' || usernameVal === '' || passwordVal === '' || cpasswordVal === '')	{
+				alert('Empty fields cannot be submitted');
+				return false;			
+			}
+		}
+		</script>
+	</head>
+
+	<body>
+		<form method = "post" action = "" onSubmit = "return valid()">
+			<label>Email</label><input type ="text" id= "email"/><br/>
+			<label>Username</label><input type = "text" id = "username"/><br/>
+			<label>Password</label><input type = "password" id = "password"><br/>
+			<label>Confirm-Password</label><input type = "password" id= "c_password"><br/>
+			<input type = "submit" value="SignUp Now" /> 
+		</form>
+	</body>
+</html>

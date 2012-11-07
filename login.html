@@ -1,0 +1,35 @@
+<!DOCTYPE html>    
+<html>
+	<head>
+		<title></title>
+		<script type = "text/javascript">
+			function valid(){
+			var usernameVal = document.getElementById('username');
+			var passwordVal = document.getElementById('password');
+
+			if(usernameVal !== 'webmaster' && passwordVal !== 'changeme@soon'){
+				alert('Hurray !! Simple but i step forward.');
+			}
+			else
+			{
+				alert('Password / Username is invalid. please Log in with right credential');		
+			}
+		}
+		
+
+		</script>
+	</head>
+
+	<body>
+	<!--My name is: Mubin Shrestha-->
+		<a href = "home.html">Home</a>
+		<a href = "Signup.html">SignUp</a>
+		<a href = "login.htm">Log IN</a>
+	<form method = "post" action = "" onSubmit = "return valid()">
+			<label>Username</label><input type = "text" id = "username"/><br/>
+			<label>Password</label><input type = "password" id = "password"><br/>
+			<input type = "submit" value="Login" /> 
+	</form>
+        <p>Copyright &copy; 2012 by Mubin Shrestha</p>
+	</body>
+</html>
